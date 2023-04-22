@@ -9,9 +9,16 @@ body{
     color: #fff;
 }
 .container{
-    margin: 12%;
-    width: 902%;
-    max-width: 700px;
+    width: 90%;
+    max-width: 700px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 700px;
+    height: 100vh;
+    margin: auto;
+    padding: 0 40px;
 }
 .display{
     width: 100%;
@@ -60,4 +67,30 @@ body{
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
+    width: 50%;
+}
+
+@media only screen and (max-width: 700px){
+    .container {
+        /* width: min-content; */
+        width: 95%;
+        height: 100vh;
+        justify-content: center;
+        overflow: hidden;
+        padding: 0 10px;
+    }
+    .container h1 {
+        font-size: 32px;
+        font-weight: none;
+    }
+    .container button {
+        width: 100%;
+    }
+    .container .display {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .container input {
+        width: 90%;
+    }
 }
